@@ -16,5 +16,5 @@ services:
     volumes:
       - ${DOCKER_VOLUME_STORAGE:-/mnt/docker-volumes}/vscode/config:/config
     ports:
-      - 8443:8443
+      - 80:8443
     restart: unless-stopped
