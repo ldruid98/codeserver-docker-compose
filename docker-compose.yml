@@ -7,9 +7,8 @@ services:
       - PUID=1000
       - PGID=1000
       - TZ=Europe/Berlin
-      - PASSWORD=MyStrongLoginPassword
+      - PASSWORD=${PASSWORD}
       - SUDO_PASSWORD=MyOptionalStrongSudoPassword #optional
-      #- SUDO_PASSWORD_HASH= #optional
       - PROXY_DOMAIN=vscode.example.com #optional
       - DEFAULT_WORKSPACE=/config/workspace #optional
     volumes:
